@@ -27,6 +27,12 @@ for (const solution of [
       expect(solution('ASDF')).toEqual('FDSA');
     });
     // write at least 5 more tests ...
+    it('a string with special characters', () => {
+      expect(solution('ASDF/')).toEqual('/FDSA');
+    });
+    it('a string with a number in it', () => {
+      expect(solution('asdf1')).toEqual('1fdsa');
+    });
   });
 }
 
